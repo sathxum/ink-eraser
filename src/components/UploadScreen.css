@@ -1,0 +1,127 @@
+.upload-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a1a0a 100%);
+  padding: 20px;
+}
+
+.upload-logo {
+  font-size: 56px;
+  margin-bottom: 8px;
+}
+
+.upload-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ff8c00;
+  margin: 0 0 4px;
+}
+
+.upload-sub {
+  color: #999;
+  font-size: 14px;
+  margin: 0 0 30px;
+}
+
+.upload-drop {
+  width: 100%;
+  max-width: 400px;
+  border: 2px dashed rgba(255, 140, 0, 0.4);
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(255, 140, 0, 0.03);
+  transition: all 0.2s;
+}
+
+.upload-drop:active,
+.upload-drop.over {
+  border-color: #ff8c00;
+  background: rgba(255, 140, 0, 0.08);
+  transform: scale(0.98);
+}
+
+.upload-drop svg {
+  width: 40px;
+  height: 40px;
+  color: #ff8c00;
+  margin-bottom: 12px;
+}
+
+.upload-drop p {
+  font-size: 15px;
+  color: #ccc;
+  margin: 0 0 4px;
+}
+
+.upload-drop small {
+  color: #777;
+  font-size: 12px;
+}
+
+.upload-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.upload-tags span {
+  background: rgba(255, 140, 0, 0.13);
+  color: #ff8c00;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.upload-features {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.upload-feat {
+  flex: 1;
+  background: #222;
+  border-radius: 12px;
+  padding: 14px 10px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.upload-feat em {
+  font-style: normal;
+  font-size: 22px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.upload-feat b {
+  font-size: 11px;
+  color: #ff8c00;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.upload-feat small {
+  font-size: 10px;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .upload-features {
+    gap: 8px;
+  }
+  .upload-feat {
+    padding: 10px 6px;
+  }
+}

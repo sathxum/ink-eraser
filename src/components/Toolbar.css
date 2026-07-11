@@ -1,0 +1,131 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  background: #222;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.toolbar::-webkit-scrollbar {
+  display: none;
+}
+
+.tb {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 10px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 11px;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.tb:active {
+  background: #ff8c00;
+  border-color: #ff8c00;
+  transform: scale(0.95);
+}
+
+.tb.on {
+  background: #ff8c00;
+  border-color: #ff8c00;
+  color: #000;
+}
+
+.tb svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.save-btn {
+  background: #ff8c00 !important;
+  border-color: #ff8c00 !important;
+  color: #000 !important;
+}
+
+.sep {
+  width: 1px;
+  height: 24px;
+  background: #444;
+  flex-shrink: 0;
+}
+
+/* Color bar */
+.colorbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0;
+}
+
+.color-preview {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  background: #000;
+  flex-shrink: 0;
+}
+
+.color-hex {
+  font-family: monospace;
+  font-size: 13px;
+  color: #ff8c00;
+  min-width: 64px;
+}
+
+.colorbar label {
+  font-size: 11px;
+  color: #999;
+  margin-left: 4px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 6px;
+  background: #333;
+  border-radius: 3px;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff8c00;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.slider-val {
+  font-size: 12px;
+  color: #ff8c00;
+  min-width: 28px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .tb span {
+    display: none;
+  }
+  .tb {
+    padding: 8px;
+  }
+}

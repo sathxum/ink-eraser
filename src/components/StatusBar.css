@@ -1,0 +1,15 @@
+.statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  background: #222;
+  border-top: 1px solid #333;
+  flex-shrink: 0;
+  font-size: 11px;
+  color: #888;
+}
+
+.statusbar span {
+  white-space: nowrap;
+}
